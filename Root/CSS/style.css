@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+	background-color: #101010;
+	margin: auto;
+}
+.header {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: "Arial";
+	padding: 1px;
+	background-color: black;
+}
+#banner {
+	max-width: 100%;
+	height: auto;
+}
+h1,h2 {
+	text-align: center;
+	color: white;
+	padding: 0px;
+    margin: 0px;
+}
+#bgvid {
+    position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+}
+p {
+	position: relative;
+	color: white;
+	background-color: black;
+}
+}
+/* Smartphones */
+@media screen and (min-width: 320px) {
+    .header {
+		font-size: 20px;
+    }
+	p {
+		font-size: 15px;
+    }
+}
+/* iPads */
+@media screen and (min-width: 768px) {
+    .header {
+		font-size: 30px;
+    }
+	p {
+		font-size: 25px;
+    }
+}
+/* Desktops */
+@media screen and (min-width: 1224px) {
+    .header {
+		font-size: 40px;
+    }
+	p {
+		font-size: 35px;
+    }
+}
+nav li {
+    display: inline-block;
+}
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+.music {
+	background-image: url("../Assets/Static.gif");
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.music h2 {
+	background-color: black;
+	font-size: 40px;
+}
+.music img {
+	display: inline;
+	height: 300px;
+	width: 300px;
+}
+.music #tracks {
+	display: inline-block;
+	font-size: 10px;
+	padding: 5px;
+}
+#album {
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
