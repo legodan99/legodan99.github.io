@@ -68,7 +68,16 @@ iframe {
 	display: block;
 	margin: 0 auto;
 }
-.music {
+#vid iframe {
+	width:560px;
+	height:315px;
+	margin-top: 5px;
+	margin-bottom:5px;
+}
+#vid h2 {
+	background-color: black;
+}
+.music, #vid {
 	background-image: url("../Assets/Static.gif");
 	padding-top: 5px;
 	padding-bottom: 5px;
