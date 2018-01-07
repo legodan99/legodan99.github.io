@@ -19,7 +19,12 @@
 	<img src="Assets/Banner.png" id="banner" alt="banner">
 	</div>
 	<section id = "customiser">
-		<canvas id="myCanvas" width="800" height="500">Browser doesn't support canvas</canvas>
+		<canvas id="myCanvas" width="500" height="500">Browser doesn't support canvas</canvas>
+		<form action="javascript:void(0);"> <!--Stops page from reloading on submit-->
+			Select your favorite color:
+			<input type="color" name="favcolor" value="#ff0000">
+			<input type="submit" onclick="ColorUpdate()">
+		</form>
 	</section>
 	<script src="JS/custom.js"></script>
 </body>
