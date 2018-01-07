@@ -17,6 +17,14 @@ body {
 	max-width: 100%;
 	height: auto;
 }
+#customiser {
+	background-color: white;
+}
+canvas {
+	border-style: solid;
+	display: block;
+	margin: auto;
+}
 h1,h2 {
 	text-align: center;
 	color: white;
