@@ -19,6 +19,7 @@ body {
 }
 #customiser {
 	background-color: white;
+	padding: 5px;
 }
 canvas {
 	border-style: solid;
