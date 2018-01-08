@@ -137,7 +137,7 @@ iframe {
 	padding: 1px;
 	background-color: black;
 }
-#report h2, h3 {
+#report h2, #report h3 {
 	background-color: #101010;
 	color: white;
 }
