@@ -18,12 +18,22 @@
 	</nav>
 	<img src="Assets/Banner.png" id="banner" alt="banner">
 	</div>
-	<section id = "customiser">
+	<section id="customiser">
 		<canvas id="myCanvas" width="500" height="500">Browser doesn't support canvas</canvas>
-		<form action="javascript:void(0);"> <!--Stops page from reloading on submit-->
-			Select your favorite color:
+		<form action="javascript:void(0);" id="colorbutton"> <!--Stops page from reloading on submit-->
+			Select your color:
 			<input type="color" name="favcolor" value="#ff0000">
 			<input type="submit" onclick="ColorUpdate()">
+		</form>
+		<form action="javascript:void(0);" id="cartbutton"> <!--Stops page from reloading on submit-->
+			Add to cart:
+			<input type="button" value="Add" onclick="CartUpdate()">
+		</form>
+	</section>
+	<section id="cart">
+		<h2>Cart</h2>
+		<form action="javascript:void(0);" id="carthead"> <!--Stops page from reloading on submit-->
+			<input type="button" value="Checkout" onclick="CartCheckout()">
 		</form>
 	</section>
 	<script src="JS/custom.js"></script>
