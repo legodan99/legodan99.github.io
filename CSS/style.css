@@ -96,6 +96,10 @@ iframe {
 #vid h2 {
 	background-color: black;
 }
+.music {
+	margin: auto;
+	text-align: center;
+}
 .music, #vid {
 	background-image: url("../Assets/Static.gif");
 	padding-top: 5px;
@@ -110,7 +114,7 @@ iframe {
 	height: 350px;
 	width: auto;
 }
-.music #tracks {
+.music .tracks {
 	display: inline-block;
 	font-size: 10px;
 	padding: 5px;
@@ -121,7 +125,7 @@ iframe {
 	border-style: solid;
 	padding: 5px;
 }
-#album {
+.album {
 	background-color: white;
 	padding-top: 5px;
 	padding-bottom: 3px;
