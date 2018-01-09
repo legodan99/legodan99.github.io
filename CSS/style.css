@@ -51,34 +51,41 @@ p {
 	position: relative;
 	color: white;
 	background-color: black;
+	padding: 5px;
 }
 }
 /* Smartphones */
-@media screen and (min-width: 320px) {
-    .header {
-		font-size: 20px;
-    }
-	p {
-		font-size: 15px;
-    }
-}
-/* iPads */
-@media screen and (min-width: 768px) {
+@media (min-width: 375px) {
     .header {
 		font-size: 30px;
     }
-	p {
-		font-size: 25px;
+	#info {
+		font-size: 30px;
+    }
+	.music {
+		display: block;
+	}
+}
+/* iPads */
+@media (min-width: 768px) {
+    .header {
+		font-size: 35px;
+    }
+	#info {
+		font-size: 45px;
     }
 }
 /* Desktops */
-@media screen and (min-width: 1224px) {
+@media (min-width: 1224px) {
     .header {
 		font-size: 40px;
     }
-	p {
-		font-size: 35px;
+	#info {
+		font-size: 50px;
     }
+	.tracks {
+		display: inline-block;
+	}
 }
 nav li {
     display: inline-block;
@@ -88,10 +95,10 @@ iframe {
 	margin: 0 auto;
 }
 #vid iframe {
-	width:560px;
-	height:315px;
-	margin-top: 5px;
-	margin-bottom:5px;
+	width: 30%;
+	height: 315px;
+	margin: 5px;
+	display: inline-block;
 }
 #vid h2 {
 	background-color: black;
@@ -114,8 +121,7 @@ iframe {
 	height: 350px;
 	width: auto;
 }
-.music .tracks {
-	display: inline-block;
+.tracks {
 	font-size: 10px;
 	padding: 5px;
 	column-count: 3;
@@ -135,6 +141,8 @@ iframe {
 	text-align: center;
 	font-family: "Arial";
 	padding: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
 	background-color: black;
 }
 #report h2, #report h3 {

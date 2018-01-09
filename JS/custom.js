@@ -5,11 +5,26 @@ window.onload = function() {
 	ctx.fillStyle = "#000000";
 	ctx.font = "30px Arial";
 	ctx.fillText("#ff0000",200,200);
+	console.log(storedCart);
+	for(i = 0; i < storedCart.length; i++)
+	{
+		cart.push(storedCart[i]);
+		var storedShirt = document.createElement("p");
+		var stringThing = storedCart[i];
+		console.log(stringThing);
+		var storedNode = document.createTextNode(stringThing);
+		storedShirt.style.backgroundColor = (stringThing).substring(0,7);
+		storedShirt.appendChild(storedNode);
+		var element = document.getElementById("cart");
+		var child = document.getElementById("carthead");
+		element.insertBefore(storedShirt,child);
+	}
 };
 var n = "#ff0000";
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 var cart = [];
+var storedCart = JSON.parse(localStorage.getItem("cart"));
 function ColorUpdate() {
 	ctx.clearRect(0, 0, c.width, c.height);
 	n = document.getElementsByName("favcolor")[0].value;
@@ -22,8 +37,9 @@ function ColorUpdate() {
 	ctx.fillText(n,200,200);
 }
 function CartUpdate() {
-	cart += n + " shirt";
+	cart.push(n + " shirt");
 	console.log(cart);
+	localStorage.setItem("cart", JSON.stringify(cart));
 	var shirt = document.createElement("p");
 	var node = document.createTextNode(n + " shirt");
 	shirt.style.backgroundColor = n;
@@ -34,6 +50,7 @@ function CartUpdate() {
 }
 function CartCheckout() {
 	alert("Your items have been purchased and are on their way.");
+	localStorage.clear();
 	location.reload();
 }
 var a = 500;
